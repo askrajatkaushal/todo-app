@@ -1,0 +1,15 @@
+<div class="container padding-50">
+  <div class="page-header text-center">
+    <h1>todo</h1>
+  </div>
+
+  <app-add-task (addTaskEvent)="addTask($event)"></app-add-task>
+
+  <hr>
+
+  <app-task-list
+    [tasks]="tasks"
+    (deleteTaskEvent)="deleteTask($event)"
+    (updateTaskEvent)="updateTask($event)"
+  ></app-task-list>
+</div>

@@ -1,0 +1,26 @@
+<div class="input-group">
+  <input type="text" id="add-task" class="form-control" placeholder="Add a task" aria-describedby="basic-addon2"
+         #task ngModel name="task" (keydown.enter)="addTask(task.value)">
+  <label for="add-task" class="input-group-addon glyphicon glyphicon-plus glyphicon-top-fix" id="basic-addon2"></label>
+</div>
+
+<!--
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="input-group">
+      <input type="text" id="add-task" class="form-control" placeholder="Add a task" aria-describedby="basic-addon2"
+             #task ngModel name="task" (keydown.enter)="addTask(task.value)">
+      <label for="add-task" class="input-group-addon glyphicon glyphicon-plus glyphicon-top-fix" id="basic-addon2"></label>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="input-group date">
+        <input type="text" class="form-control" placeholder="Due Date">
+        <span class="input-group-addon">
+          <i class="glyphicon glyphicon-calendar"></i>
+        </span>
+      </div>
+  </div>
+</div>
+-->

@@ -1,0 +1,15 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let t of tasks">
+    <div class="checkbox display-inline">
+      <label>
+        <input type="checkbox" name="taskCompleted" [checked]="taskCompleted(taskCheck, t)"
+               ngModel #taskCheck (click)="updateTask(t, taskCheck.checked)">
+        <span class="task-header">
+          {{ t.task }}
+        </span>
+<!--        <span class="task-deadline">{{ t.dueDate | date }}</span>-->
+      </label>
+    </div>
+    <span class="glyphicon glyphicon-trash color-red pull-right display-inline delete-item" (click)="deleteTask(t)"></span>
+  </li>
+</ul>
